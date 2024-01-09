@@ -3,7 +3,7 @@ import { DataGrid, GridToolbar } from "@mui/x-data-grid";
 import { renderStatus } from "../components/lib/consts/renderers/renderStatus";
 
 const columns = [
-  { field: "companyName", headerName: "Company", minWidth: 200, flex: 1 },
+  { field: "fullName", headerName: "Full Name", minWidth: 200, flex: 1 },
   {
     field: "hiringStage",
     headerName: "Hiring Stage",
@@ -54,7 +54,7 @@ export default function AllApplicants() {
     <div className="flex flex-col p-3 gap-5">
       <div>
         <span className="text-3xl font-black">
-          Total Applied Jobs: {tableData.length}
+          Total Applicants: {tableData.length}
         </span>
       </div>
       <div className="w-full max-h-[8rem]">
