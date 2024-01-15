@@ -1,0 +1,118 @@
+.offer{
+    .secContainer{
+        .secIntro{
+            h2{
+                color: var(--blackColor);
+                line-height: 2.5rem;
+                padding-bottom: 2rem;
+                text-align: center;
+                font-size: 2.2rem;
+                // padding-left: 4%;
+            }
+        }
+    }
+}
+
+.company-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Spread companies evenly in the container */
+}
+
+.company {
+  position: relative; /* Set the parent element to a relative position */
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid hsl(160, 100%, 35%);
+  border-radius: 5px;
+  width: 1200px;
+  display: flex;
+  // flex-direction: column; /* Change to a column layout */
+  background-color: #f7f7f7; /* Background color for each company card */
+  transition: transform 0.2s ease-in-out; /* Add a smooth hover effect */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow effect */
+  cursor: pointer; /* Change cursor on hover */
+
+  .details-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: hsl(160, 100%, 35%);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1; /* Ensure the button is in front of other elements */
+
+    &:hover {
+      background-color: #79AC78;
+    }
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  &:hover {
+    transform: scale(1.05); /* Enlarge the card on hover */
+  }
+}
+
+.company-logo {
+  max-width: 165px;
+  height: auto; /* Keep the image aspect ratio */
+  margin: 50px 1px; /* Center the logo horizontally */
+}
+
+.company-details {
+  margin-left: 40px;
+  display: grid;
+
+  h3 {
+    font-size: 20px; /* Larger heading */
+    margin-bottom: 10px;
+    color: #333; /* Darken text color */
+  }
+
+  p {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+
+    .icon-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #0077b6;
+      border-radius: 50%; /* Make the icon container circular */
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+
+    .icon {
+      color: hsl(160, 100%, 35%);
+      font-size: 25px;
+      padding-right: 5px;
+      margin-right: 5px;
+    }
+  }
+
+  .company-description {
+    font-size: 16px; /* Adjust font size */
+    color: #555; /* Slightly lighter text color */
+    margin-top: 20px; /* More spacing */
+  }
+
+  a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #0077b6;
+  }
+}
+
+  
+  
